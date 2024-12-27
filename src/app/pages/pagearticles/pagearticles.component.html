@@ -1,0 +1,101 @@
+<div class="containermain" cdkDrag>
+
+
+    <section class="containerpageclients">
+            <div class="container_registrers">
+                <h1 class="registrerclients">Registro de Articles
+                </h1>
+                <div class="container_searchClients">
+                    <div>
+                        <button>Buscar</button>
+                        <input type="text">
+                    </div>
+                    <h3 routerLink="">Cerrar</h3>
+                </div>
+            </div>
+            <div class="container_tableClients">
+    
+                <table class="bodytable" mat-table #table>
+    
+                    <ng-container matColumnDef="code">
+                        <th mat-header-cell *matHeaderCellDef>Codigo</th>
+                        <td mat-cell *matCellDef="let row"> {{row.code}} </td>
+                    </ng-container>
+    
+                    <ng-container matColumnDef="name">
+                        <th mat-header-cell *matHeaderCellDef>Nombre</th>
+                        <td mat-cell *matCellDef="let row"> {{row.name}} </td>
+                    </ng-container>
+    
+                    <ng-container matColumnDef="lastname">
+                        <th mat-header-cell *matHeaderCellDef>Apellido</th>
+                        <td mat-cell *matCellDef="let row"> {{row.lastname}} </td>
+                    </ng-container>
+                    
+                    <ng-container matColumnDef="age">
+                        <th mat-header-cell *matHeaderCellDef>Edad</th>
+                        <td mat-cell *matCellDef="let row"> {{row.age}} </td>
+                    </ng-container>
+                    
+                    <ng-container matColumnDef="DNI">
+                        <th mat-header-cell *matHeaderCellDef>Cedula de Identidad</th>
+                        <td mat-cell *matCellDef="let row"> {{row.DNI}} </td>
+                    </ng-container>
+                
+                    <tr class="bodyheader" mat-header-row *matHeaderRowDef="['code','name','lastname', 'age','DNI']" >
+                            
+                    </tr>
+                    <tr mat-row *matRowDef="let row; columns: ['code','name','lastname', 'age','DNI'];">
+                    </tr>
+                </table>
+    
+                @if (serviceUserhttp.FilteredClient.length < 1) {
+                    <div class="noresult" >
+                        <p >No se Encontraron Resultados</p>
+                    </div>
+                    
+                }
+    
+                
+                
+    
+    
+                <!-- <table>
+                    <thead>
+                        <tr>
+                            <th>ID de Cliente</th>
+                            <th>Nombre Completo</th>
+                            <th>Estado de cuenta</th>
+                            <th>Fecha de Registro</th>
+                            <th>Comentario</th>
+                        </tr>
+                    </thead>
+                    <tbody> 
+                        @for (client of serviceUserhttp.Clients; track client) {
+                            
+                            <tr>
+                                <td> {{client.code}}</td>
+                                <td> {{client.name}} </td>
+                                <td> {{client.lastname}}</td>
+                                <td> {{client.age}}</td>
+                                <td> {{client.DNI}} </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table> -->
+        
+            </div>
+        
+            <div class="container_btnsOptions">
+                <button>Buscar Cliente</button>
+                <button>Informacion del cliente</button>
+                <button>Editar al cliente</button>
+                <button routerLink="createuser">Agregar Cliente</button>
+            </div>
+        </section>
+    
+    
+    
+    </div>
+    
+    

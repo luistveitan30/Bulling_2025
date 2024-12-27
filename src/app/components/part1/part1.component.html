@@ -1,0 +1,55 @@
+<div id="contenedorPart1">
+     
+    <div class="Div20 classDiv1">
+        <div class="Div200 classDiv2">
+            <div class="Div2000-Data1 classdiv3">
+                <label for="codeclient">Codigo Cliente:</label>
+                <label for="nameclient">Nombre:</label>
+                <label for="employessales">Empleado de Ventas:</label>
+                <label for="typeofcoin">Moneda:</label>
+            </div>
+            <!---->
+            <div class="Div2000-Data2">
+                <!-------->
+                    <input type="text" id="codeclient" readonly value="{{User.code}}">
+                    <input type="text" id="nameclient" readonly [value]="User.name +' '+User.lastname">
+                <input type="text" id="employessales" readonly>
+                <div class="classdiv5">
+                    <select class="classdiv6">
+                        <option value="cord">COR</option>
+                        <option value="usd">USD</option>
+                    </select>
+
+                    <select class="classdiv6">
+                        <option value="contado">Contado</option>
+                        <option value="credito">Credito</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+<!-- ------------------------------------------------------>
+    <div class="Div20 classDiv1">
+        <div class="Div200Edited classDiv2">
+            <div class="Div2000-Data1 classdiv3">
+                <label for="n°">N°:</label>
+                <label for="reference_number">Numero de Referencia:</label>
+                <label for="date_count">Fecha Contabilizacion:</label>
+                <label for="date_end">Fecha Vencimiento:</label>
+            </div>
+            <!---->
+            <div class="Div2000-Data2">
+                <!-------->
+                <div id="Div20000-Data1">
+                    <input type="text" id="n°_00" readonly>
+                    <input type="text" id="n°_01" readonly>
+                </div>
+                <input type="text" id="reference_number" readonly>
+                <input type="text" id="date_count" readonly>
+                <input type="text" id="date_end" readonly>
+            </div>
+        </div>
+    </div>
+        
+</div>

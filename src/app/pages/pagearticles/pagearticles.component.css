@@ -1,0 +1,174 @@
+
+.containermain{
+    position: fixed;
+    top: 15%;
+    left: 5%;
+    width: 80%;
+}
+
+.containerpageclients{
+    border: 1px solid transparent;
+    box-shadow: 0 0 3px white;
+    border-radius: 5px;
+    transform: scale(0);
+    background: var(--background-color);
+    color: var(--text-color);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    animation: forwards;
+    animation-name: showclients;
+    animation-duration: .1s;
+    z-index: 1;
+}
+
+@keyframes showclients {
+    0%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+
+.registrerclients{
+    padding: 15px;
+}
+
+.container_searchClients{
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid white; */
+}
+
+.container_searchClients div{
+    display: flex;
+    width: 50%;
+    /* border: 1px solid red; */
+    gap: 2px;
+}
+.container_searchClients input{
+    padding: 5px;
+    width: 100%;
+}
+.container_searchClients button{
+    width: 20%;
+}
+
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+    /* border: 1px solid blue; */
+    /* overflow: scroll; */
+    /* border: 2px solid rgb(28, 81, 228); */
+}
+
+::-webkit-scrollbar{
+    width: 5px;
+}
+::-webkit-scrollbar-track{
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-button{
+    background-color: rgba(32, 33, 34, 0);
+}
+
+::-webkit-scrollbar-thumb{
+    background: rgba(83, 77, 77, 0.664);
+    border-radius: 5px;
+}
+
+
+table >thead tr{
+    position: relative;
+    background-color: var(--background-tableheader);
+    border-bottom: 1px solid transparent;
+    /* box-shadow: 0 0 3px black inset; */
+}
+
+table >thead tr th{
+    text-align: start;
+    padding: 15px;
+    color: var(--text-colorth);
+    /* border: 1px solid blue; */
+}
+
+table > thead >tr{
+    /* border: 1px solid red; */
+    padding: 5px;
+    font-weight: 100;
+    color: rgb(255, 255, 255);
+}
+
+
+tbody> tr:nth-child(even){
+    background-color: rgba(128, 128, 128, 0.329)
+}
+
+tbody tr td{
+    padding: 18px;
+    border: 1px solid rgba(0, 0, 0, 0.185);
+    /* border: 1px solid red; */
+}
+
+.container_tableClients{
+    background: rgb(255, 255, 255);
+    border-radius: 5px;
+    height: 300px;
+    max-height: 50vh;
+    overflow: auto;
+    color: var(--text-colorth);
+    border: 1px solid var(--border-input);
+}
+.container_btnsOptions{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 2px;
+    /* border: 1px solid white; */
+}
+.container_btnsOptions button{
+    width: 15%;
+    justify-content: center;
+    flex-direction: row;
+    padding: 0.2vh;
+}
+
+h3{
+    /* border: 1px solid white; */
+    text-align: end;
+    cursor: pointer;
+}
+
+
+.demo-row-is-clicked{
+    border: 1px solid black;
+    box-shadow: 0px 0px 5px blue;
+    font-weight: 500;
+}
+
+.bodyheader{
+    background: var(--background-tableheader);
+    font-weight: 600;
+}
+.bodytable:nth-child(even){
+    background: rgba(99, 99, 99, 0.582);
+}
+
+.noresult{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    height: 81%;
+    /* background: red; */
+}
+.noresult p{
+    font-size: 20px;
+    text-shadow: 0 0 1px;
+}

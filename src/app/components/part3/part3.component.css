@@ -1,0 +1,73 @@
+#totacontainer{
+    display: flex;
+    justify-content: space-between;
+    min-height: calc(20vh - 50vh);
+    /* border: 1px solid red; */
+}
+#subtotacontainer_001{
+    display: flex;
+    gap: 2px;
+    flex-direction: column;
+    /* border: 1px solid blue; */
+    border-radius: 5px;
+    padding: 5px;
+}
+#labelstotal{
+    display: flex;
+    justify-content: space-around;
+    padding: 8px;
+    /* border: 1px solid wheat; */
+    color:  var(--text-color);
+}
+
+#labelstotal label{
+    color: var(--text-color)
+}
+
+#inputstotal{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    /* border: 1px solid white; */
+}
+#inputstotal input{
+    padding: 5px 8.9px;
+    background: var(--background-input);
+    border: 1px solid var(--border-input);
+    border-radius: 3px;
+    border-style:dotted;
+}
+
+#subtotacontainer_002{
+    padding: 8px 0px;
+    text-align: end;
+    /* border: 1px solid white; */
+}
+
+#subtotacontainer_002 input{
+    border: 1px solid var(--border-input);
+}
+
+#subtotacontainer_002 label{
+    padding: 5px;
+    color: var(--text-color);
+}
+
+#payinggroup{
+    display: flex;
+    flex-wrap: wrap;
+    /* border: 1px solid white; */
+    gap: 2px;
+    padding: 5px;
+    
+}
+
+#payinggroup button{
+    font-family: Opensas2;
+    border-radius: 3px;
+    border: 1px solid var(--border-input);
+    background: var(--background-btn);
+    width: 20vh;
+    padding: 10px 20px;
+    color: var(--text-colorbtn);
+}

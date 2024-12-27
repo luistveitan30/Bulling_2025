@@ -1,0 +1,34 @@
+<div class="containercreateUser" cdkDrag>
+
+
+<section class="createcontainer">
+    <div class="headercreateclient">
+        <h2>Crear Cliente</h2>
+
+        <h2 routerLink="/clients">Cerrar</h2>
+    </div>
+    <div class="formcontainercreate">
+        <form [formGroup]="FormuserCreate" (ngSubmit)="sendNewUser()" >
+            <div class="form">
+                <div class="labelscreate">
+                    <label for="code">Codigo:</label>
+                    <label for="namecreate">Nombre:</label>
+                    <label for="lastnamecreate">Apellido:</label>
+                    <label for="agecreate">Edad:</label>
+                    <label for="DNICedula">N° Cedula:</label>
+                </div>
+                <div class="inputscreate">
+                    <input type="text" id="code" formControlName = 'code'>
+                    <input type="text" id="namecreate" formControlName = 'name'>
+                    <input type="text" id="lastnamecreate" formControlName = 'lastname'>
+                    <input type="number" id="agecreate" formControlName = 'age'>
+                    <input type="text" id="DNICedula" formControlName = 'DNI'>
+                </div>
+            </div>
+            <div class="containerbuttoncreate">
+                <button [disabled]="FormuserCreate.invalid">Agregar</button>
+            </div>
+        </form>
+    </div>
+</section>
+</div>

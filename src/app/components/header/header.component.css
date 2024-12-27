@@ -1,0 +1,21 @@
+div{
+    padding: 3px;
+    background-color: rgba(56, 60, 85, 0.349);
+    border-bottom: 1px solid transparent;
+    box-shadow: 0 0 3px;
+    margin-bottom: 2px;
+    /* border: 1px solid black; */
+}
+
+div nav{
+    padding: 5px;
+    display: flex;
+    gap: 20px;
+}
+
+div nav a{
+    color: white;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}

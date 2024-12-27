@@ -1,0 +1,103 @@
+
+input{
+    background: var(--background-input);
+    border: 1px solid var(--border-input);
+    border-radius: 3px;
+    padding: 0.5vh;
+}
+label{
+    color: var(--text-color)
+}
+
+
+/*----------------------------------------*/
+
+/*contenedor principal de las secciones*/
+#contenedorPart1{
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: space-around;
+}
+
+/*subcontenedor de las secciones*/
+
+.classDiv1{
+    display: flex;
+    padding: 0.5vh;
+    width: 50%;
+    /* border: 1px solid black; */
+}
+.classDiv2{
+    display: flex;
+    gap: 5px;
+    width: 100%;
+    /* border: 1px solid blue; */
+}
+.Div200Edited{
+    justify-content: end;
+}
+.classdiv3{
+    display: flex;
+    justify-content:space-around;
+    flex-direction: column;
+    /* border: 1px solid white; */
+}
+
+/*contenedor de lo input de la seccion 1*/
+.Div2000-Data2{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    gap: 3px;
+    /* border: 1px solid red; */
+}
+
+.classdiv4{
+    display: flex;
+    flex-direction: column;
+}
+
+/*contenedor de los selectores*/
+.classdiv5{
+    display: flex;
+    gap: 10px;
+    justify-content:flex-start;
+    /* border: 1px solid red; */
+}
+
+/*Selectores de la moneda y el tipo de factura */
+
+
+.classdiv6{
+    background-image: linear-gradient(to right, var(--background-btn) 0%, var(--background-btn)  51%, var(--background-btn)  100%);
+       padding: 3px 20px;
+       text-align: center;
+       text-transform: uppercase;
+       font-family: Arial, Helvetica, sans-serif;
+       transition: 0.5s;
+       background-size: 200% auto;
+       color: rgb(0, 0, 0);
+       border-style: none;         
+       border-radius: 10px;
+       display: block;
+       color: var(--text-colorbtn);
+       border: 1px solid rgba(0, 0, 0, 0.233);
+}
+     .classdiv6:hover {
+       background-position: right center; /* change the direction of the change here */
+       color: #000000;
+       text-decoration: none;
+     }
+
+#Div20000-Data1{
+    display: flex;
+    justify-content: space-evenly;
+    /* border: 1px solid rgb(236, 236, 236); */
+    gap: 5px;
+}
+
+#Div20000-Data1 input{
+    border: 1px solid var(--border-input);
+    background-color: var(--background-input);
+    width: 50%;
+}

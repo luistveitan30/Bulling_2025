@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#subcontenedor{
+    border: 1px solid white;
+    background-color: white;
+    height: calc(41vh);
+    border-radius: 5px;
+    padding: 5;
+    overflow: auto;
+}
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid white;
+}
+
+::-webkit-scrollbar{
+    width: 5px;
+}
+::-webkit-scrollbar-track{
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-button{
+    background-color: rgba(32, 33, 34, 0);
+}
+
+::-webkit-scrollbar-thumb{
+    background: rgba(83, 77, 77, 0.664);
+    border-radius: 5px;
+}
+ 
+.tdvalue{
+    padding: 0;
+}
+
+.tdvalue03{
+    width: 5%;
+}
+
+
+input{
+    width: 100%;
+    border-style: solid;
+    border: 1px solid rgba(0, 0, 0, 0.158);
+    padding: 15px;
+}

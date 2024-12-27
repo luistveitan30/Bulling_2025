@@ -1,0 +1,27 @@
+#sectionbtn{
+    padding: 2px;
+    /* border: 1px solid black; */
+    display: flex;
+    gap: 2px;
+}
+
+#sectionbtn button{
+    background-image: linear-gradient(to right, var(--background-btn) 0%, var(--background-btn)  51%, var(--background-btn)  100%);
+    width: 25vh;
+    padding: 10px;
+   text-align: center;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: var(--text-colorbtn);            
+   border-radius: 5px;
+   display: block;
+   border-style: solid;
+   border: 1px solid rgba(255, 255, 255, 0.377);
+   
+}
+
+#sectionbtn button:hover{
+    background-position: right center; /* change the direction of the change here */
+   color: #fff;
+   text-decoration: none;
+}
